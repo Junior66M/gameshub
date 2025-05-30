@@ -1,6 +1,78 @@
 {
   "juegos": [
     {
+      "id": 16,
+      "nombre": "Gran turismo 7",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/09/gran-turismo-7-2466585.jpg?tf=3840x",
+      "categoria": "Sports",
+      "desarrollador": "Poliphony Digital",
+      "fechaLanzamiento": "2017-07-25",
+      "descripcion": "Fortnite es un juego de supervivencia donde 100 jugadores luchan entre sí en combate jugador contra jugador para ser el último en pie.",
+      "rating": 4.5,
+      "plataformas": ["PlayStation", "PC"],
+      "precio": 66.90,
+      "esGratis": true,
+      "requisitos": {
+        "minimos": {
+          "os": "Windows 7/8/10 64-bit",
+          "procesador": "Core i3-3225 3.3 GHz",
+          "memoria": "4 GB RAM",
+          "graficos": "Intel HD 4000",
+          "almacenamiento": "20 GB"
+        },
+        "recomendados": {
+          "os": "Windows 10 64-bit",
+          "procesador": "Core i5-7300U 3.5 GHz",
+          "memoria": "8 GB RAM",
+          "graficos": "Nvidia GTX 960",
+          "almacenamiento": "20 GB"
+        }
+      },
+      "screenshots": [
+        "https://i.ytimg.com/vi/56RvP3NHYCY/maxresdefault.jpg",
+        ""
+      ],
+      "trailer": "",
+      "tags": ["Multijugador", "Online", "Construcción", "Supervivencia"]
+    },
+     {
+      "id": 17,
+      "nombre": "The Leguend of Zelda:BOTW",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFCuoQ7UJGIg0ulsghuiusgmiReTLL2gDnzA&s",
+      "categoria": "Aventura",
+      "desarrollador": "Nintendo EPD",
+      "fechaLanzamiento": "2017-07-25",
+      "descripcion": "Fortnite es un juego de supervivencia donde 100 jugadores luchan entre sí en combate jugador contra jugador para ser el último en pie.",
+      "rating": 4.9,
+      "plataformas": ["Nintendo Switch"],
+      "precio": 59.90,
+      "esGratis": true,
+      "requisitos": {
+        "minimos": {
+          "os": "Windows 7/8/10 64-bit",
+          "procesador": "Core i3-3225 3.3 GHz",
+          "memoria": "4 GB RAM",
+          "graficos": "Intel HD 4000",
+          "almacenamiento": "20 GB"
+        },
+        "recomendados": {
+          "os": "Windows 10 64-bit",
+          "procesador": "Core i5-7300U 3.5 GHz",
+          "memoria": "8 GB RAM",
+          "graficos": "Nvidia GTX 960",
+          "almacenamiento": "20 GB"
+        }
+      },
+      "screenshots": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa_3OGW3YBau95plyFt2t0TmfPa4-_XdU6gw&s",
+        ""
+      ],
+      "trailer": "https://www.youtube.com/watch?v=WJW-bzXZM8M",
+      "tags": ["Multijugador", "Online", "Construcción", "Supervivencia"]
+    },
+
+    
+    {
       "id": 1,
       "nombre": "Fortnite",
       "imagen": "https://cdn2.unrealengine.com/fortnite-og-social-share-1920x1080-685342852.jpg",
@@ -555,6 +627,13 @@
       "icono": "bi-trophy",
       "descripcion": "Juegos deportivos con simulación realista de diferentes disciplinas",
       "color": "#4ecdc4"
+    },
+    {
+      "id": "adventura",
+      "nombre": "Adventure",
+      "icono": "bi-compass",
+      "descripcion": "Juegos de aventura y exploracion con narrativas epicas ",
+      "color": "#9b59b6"
     }
   ]
 }
