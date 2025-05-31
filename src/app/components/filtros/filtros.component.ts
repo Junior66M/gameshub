@@ -18,7 +18,8 @@ export class FiltrosComponent {
     { id: 'moba', nombre: 'MOBA' },
     { id: 'fps', nombre: 'FPS' },
     { id: 'rpg', nombre: 'RPG' },
-    { id: 'sports', nombre: 'Sports' }
+    { id: 'sports', nombre: 'Sports' },
+    { id: 'adventuras', nombre: 'Adventure' }
   ];
   
   plataformas = ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch', 'Mobile'];

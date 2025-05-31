@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>TOTAL DE JUEGOS</h3>
+                @if(juegos$ | async; as juegos){
+                    <p>
+                        <b>Juegos: :</b> {{juegos.length}}
+                    </p>
+                }
+        
+                <hr/>
+                <h3>JUEGOS GRATIS VS JUEGOS PAGO : </h3>
+                    <p>
+                        <b>Juegos Grstis :</b> {{cntJuegosGratis}}
+                    </p>
+                      <p>
+                        <b>Juegos Pago :</b> {{cntJuegosPago}}
+                    </p>
+
+                <hr/>
+                
+                    
+        </div>
+
+    </div>
+     <div class="row">
+        <div class="col-3">
+            <h3>JUEGOS TOP : </h3>
+                    @if(juegoTop){
+                         <app-tarjeta-juego [juego]="juegoTop"></app-tarjeta-juego>
+                    }
+ 
+
+            </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-12">
+                <hr>
+                <br>
+                <h3>PROMEDIO JUEGOS PAGO</h3>
+                <p><b>El promedio es  </b>{{PromJuegosPago | currency:'$/. ' : 'symbol'}}
+                </div>
+            </div>
+
+
+</div>

@@ -86,7 +86,7 @@
     <h6 class="filter-title text-uppercase mb-3">Filtros Activos</h6>
     <div class="filter-tags">
       @if(filtros.categoria) {
-        <span class="filter-tag">
+        <span class="filter-tag"> 
           {{filtros.categoria}}
           <button type="button" (click)="onCategoriaChange(filtros.categoria)">
             <i class="bi bi-x"></i>
@@ -105,6 +105,14 @@
         <span class="filter-tag">
           {{filtros.precio === 'gratis' ? 'Gratis' : 'De Pago'}}
           <button type="button" (click)="onPrecioChange(filtros.precio)">
+            <i class="bi bi-x"></i>
+          </button>
+        </span>
+      }
+      @if(filtros.rating > 0) {
+        <span class="filter-tag">
+          {{filtros.rating}}+ estrellas
+          <button type="button" (click)="onRatingChange(filtros.rating)">
             <i class="bi bi-x"></i>
           </button>
         </span>
