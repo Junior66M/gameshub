@@ -1,7 +1,13 @@
+//Pregunta parte 4.1
 
+//1 En la lista-juegos.component.html
+//2 filtro.component.ts
+//3 en los servicios
 
+//Preegunta 4.2
 
-
+//1 Por que esta hecho con standalone
+//2 Compartir información entre diferentes partes de la aplicación 
 
 
 
