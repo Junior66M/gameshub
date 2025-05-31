@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, BehaviorSubject, map } from 'rxjs';
+import { Observable, BehaviorSubject, map, of } from 'rxjs';
 import { Juego } from '../interfaces/juego.interface';
+import { IEstadistica } from '../interfaces/estadistica.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -86,5 +87,48 @@ export class JuegosDataService {
       )
     );
   }
+  getJuegosPrecio(minimo:number , maximo:number)
+  {
+    return this.juegos$.pipe(
+    map(juegos => juegos.filter(juego => juego.precio >= minimo && juego.precio <= maximo))
+    );
+  }
+  getEstadistica():Observable<IEstadistica> 
+  {
+
+    let arrJuegos = this.juegosSubject.value;
+
+    let estadistica:IEstadistica={
+      totaljuegos : arrJuegos.length,
+      cntjuegosPago: arrJuegos.filter(j => j.esGratis ==false).length,
+      cntjuegosGratis:arrJuegos.filter(j => j.esGratis ==true).length,
+      mejorRating:undefined,
+      promPrecio:0
+    }
     
+    let ratingMAx =0
+    let precioJuegosPago = 0
+  for(let j of arrJuegos)
+  {
+    if(ratingMAx < j.rating)
+      {
+      ratingMAx = j.rating;
+      estadistica.mejorRating =j;
+      }
+
+      if(j.esGratis == false)
+        {
+        precioJuegosPago = precioJuegosPago +j.precio
+        }
+
+  }
+
+    estadistica.promPrecio= precioJuegosPago/estadistica.cntjuegosPago;
+
+
+    return of(estadistica);
+  }
+
+
+
 }
